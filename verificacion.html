@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarsHub | Lider en recambios de automoviles</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .contenedor {
+            position: relative;
+        }
+
+        #img1 {
+            margin-top: 25px;
+        }
+
+        .cuadrado {
+            width: 45em;
+            height: 35em;
+            background-color: #000000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 70px 15px rgba(198, 230, 252, 0.7);
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 20px;
+            border: 1px white solid;
+        }
+
+        .cuadrado p {
+            margin-top: 20px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            font-size: 43px;
+        }
+
+        span {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            align-items: center;
+            background-clip: padding-box;
+            background-color: #fa6400;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 600;
+            justify-content: center;
+            min-height: 4rem;
+            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+            color: #000000;
+            font-size: 23px;
+            margin-top: 0
+        }
+
+        button:hover,
+        button:focus {
+            background-color: #fb8332;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+        }
+
+        button:active {
+            background-color: #c85000;
+            box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+            transform: translateY(0);
+        }
+
+        #boton2{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="cuadrado">
+            <img id="img1" src="./imagenes/logo.png" alt="LogoChulo">
+            <h1>Verificación de Conocimientos</h1>
+            <p>Este sitio web contiene material restringido a personas
+                sin altos niveles de conocimientos sobre automoción. Al entrar
+                afirma que tiene por lo menos unos conocimientos avanzados y que da
+                consentimiento en ver contenido solo apto para amantes del motor.
+            </p>
+            <br>
+            <br>
+            <a class="botonNaranja" href="./main.html">
+                <button>Tengo conocimientos avanzados - Entrar</button>
+            </a>
+            <a class="botonGris" href="./imagenes/relajao.jpg">
+                <button id="boton2">Soy un platita - Salir</button>
+            </a>
+            <br>
+            <br>
+            <br>
+            <div class="disclaimer"><span>© Carshub.com, 2024 </span>
+                <br>
+                <img src="./imagenes/vehiculo.png" alt="Vehiculo" width="120px" height="120px">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
