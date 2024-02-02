@@ -7,53 +7,126 @@
     <title>CarsHub | Lider en recambios de automoviles</title>
     <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
     <style>
-        body{
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #img1 {
+            margin-top: 3vh;
+            width: 15vw;
+            max-width: 100%;
+        }
+
+        .cuadrado {
+            width: 50%;
+            height: 75%;
+            padding: 1vw;
+            min-height: 70%;
+            max-height: 100%;
+            background-color: #000000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 70px 15px rgba(198, 230, 252, 0.7);
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            font-size: 2.3vh;
+            border: 1px white solid;
+        }
+
+        .cuadrado p {
+            margin-top: 1vh;
+            margin-left: 0.75vw;
+            margin-right: 0.75vw;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            font-size: 2vw;
+        }
+
+        span {
+            font-size: 0.9vw;
             margin: 0;
             padding: 0;
         }
-        .todo {
-            display: grid;
-            grid-template-columns: 0.5fr repeat(5, 1fr) 0.5fr;
-            grid-template-rows: 0.4fr repeat(4, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
+
+        button {
+            background-color: #fa6400;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+            cursor: pointer;
+            min-height: 6.5vh;
+            font-weight: 600;
+            color: #000000;
+            font-size: 1em;
+            margin-top: 0
         }
 
-        .div1 {
-            grid-area: 1 / 2 / 2 / 7;
+        button:hover,
+        button:focus {
+            background-color: #fb8332;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
         }
 
-        .div2 {
-            grid-area: 2 / 2 / 5 / 7;
+        button:hover {
+            transform: translateY(-1px);
         }
 
-        .div3 {
-            grid-area: 5 / 2 / 6 / 7;
+        button:active {
+            background-color: #c85000;
+            box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+            transform: translateY(0);
         }
 
-        .div4 {
-            grid-area: 1 / 1 / 5 / 8;
-            z-index: 0;
-        }
-        .div4 img{
-            width: 100%;
+        #boton2{
+            background-color: gray;
+            color: white;
         }
 
-        .div5 {
-            grid-area: 2 / 3 / 3 / 6;
+        .img2{
+            width: 7vw;
+            max-width: 100%;
         }
     </style>
 </head>
 
 <body>
-    <div class="todo">
-        <div class="div1"> </div>
-        <div class="div2"> </div>
-        <div class="div3"> </div>
-        <div class="div4">
-            <img src="./imagenes/main2.jpg" alt="Foto principal">
+    <div class="contenedor">
+        <div class="cuadrado">
+            <img id="img1" src="./imagenes/logo.png" alt="LogoChulo">
+            <h1>Verificación de Conocimientos</h1>
+            <p>Este sitio web contiene material restringido a personas
+                sin altos niveles de conocimientos sobre automoción. Al entrar
+                afirma que tiene por lo menos unos conocimientos avanzados y que da
+                consentimiento en ver contenido solo apto para amantes del motor.
+            </p>
+            <br>
+            <br>
+            <a class="botonNaranja" href="./main.html">
+                <button>Tengo conocimientos avanzados - Entrar</button>
+            </a>
+            <a class="botonGris" href="./imagenes/relajao.jpg">
+                <button id="boton2">Soy un platita - Salir</button>
+            </a>
+            <br>
+            <br>
+            <br>
+            <div class="disclaimer"><span>© Carshub.com, 2024 </span>
+                <br>
+                <img class="img2" src="./imagenes/vehiculo.png" alt="Vehiculo">
+            </div>
         </div>
-        <div class="div5"> </div> 
     </div>
 </body>
 
