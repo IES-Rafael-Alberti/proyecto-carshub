@@ -6,54 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarsHub | Lider en recambios de automoviles</title>
     <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        .todo {
-            display: grid;
-            grid-template-columns: 0.5fr repeat(5, 1fr) 0.5fr;
-            grid-template-rows: 0.4fr repeat(4, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-        }
-
-        .div1 {
-            grid-area: 1 / 2 / 2 / 7;
-        }
-
-        .div2 {
-            grid-area: 2 / 2 / 5 / 7;
-        }
-
-        .div3 {
-            grid-area: 5 / 2 / 6 / 7;
-        }
-
-        .div4 {
-            grid-area: 1 / 1 / 5 / 8;
-            z-index: 0;
-        }
-        .div4 img{
-            width: 100%;
-        }
-
-        .div5 {
-            grid-area: 2 / 3 / 3 / 6;
-        }
-    </style>
+    <link rel="stylesheet" href="./estilos.css">
 </head>
 
 <body>
-    <div class="todo">
-        <div class="div1"> </div>
-        <div class="div2"> </div>
-        <div class="div3"> </div>
-        <div class="div4">
-            <img src="./imagenes/main2.jpg" alt="Foto principal">
+    <div class="container">
+        <div class="logo">
+            <img src="./imagenes/logo.png" alt="Logo">
         </div>
-        <div class="div5"> </div> 
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Products</li>
+                <li>Clients</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="imagen">
+        <img src="./imagenes/main2.jpg" alt="Imagen Principal">
     </div>
 </body>
 
