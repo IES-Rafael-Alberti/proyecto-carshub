@@ -33,11 +33,14 @@ nav{
       float: none;
       margin: 0 auto;
       display: block;
+      
   }
   nav{
     float: none;
-    margin-left: 10vw;
-    display: block;
+    margin: 0px 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   };
 }
