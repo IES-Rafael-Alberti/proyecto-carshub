@@ -22,5 +22,3 @@ Este proyecto fue creado por [Manuel Garcia Mora](https://github.com/nromragm), 
 ## Licencia
 
 Este proyecto está bajo la Licencia [GNUv2](LICENSE).
-
-¡Gracias por visitar nuestra Galería de Automóviles! Esperamos que disfrutes explorando nuestra colección. Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros.
