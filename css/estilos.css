@@ -54,6 +54,17 @@ ul li{
     max-width: 100%;
     width: 100%;
 }
+.video video.mobile{
+  display: none;
+}
+@media (max-width: 900px) {
+  .video video {
+      display: none;
+  }
+  .video video.mobile {
+      display: block;
+  }
+}
 
 ul li:hover{
   background-color:rgb(220, 143, 0);
