@@ -1,0 +1,62 @@
+@import url(https://fonts.bunny.net/css?family=amita:700);
+
+body {
+    background: url(https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg)
+        center center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: Amita;
+    margin: 20px auto;
+    width: 450px;
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: 10px solid #e88a38;
+}
+
+.contenedor-imagen > img {
+    width: 410px;
+    height: 300px;
+    margin: 10px;
+    border: 5px solid #e88a38;
+}
+
+.contenedor-imagen:hover {
+    transform: scale(1.2);
+    filter: saturate(120%);
+    transition-duration: 1s;
+
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-imagen {
+  position: relative;
+  display: inline-block;
+  transition-duration: 1s;
+
+}
+
+.texto-superpuesto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.contenedor-imagen:hover .texto-superpuesto {
+  opacity: 1;
+}
