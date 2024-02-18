@@ -19,16 +19,18 @@ h1 {
 }
 
 .contenedor-imagen > img {
-    width: 410px;
-    height: 300px;
-    margin: 10px;
+    width: 450px;
+    height: 250px;
+    margin: 15px;
     border: 5px solid #e88a38;
+    z-index: 3;
 }
 
 .contenedor-imagen:hover {
     transform: scale(1.2);
     filter: saturate(120%);
     transition-duration: 1s;
+    z-index: 2;
 
 }
 
@@ -49,12 +51,14 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 170%);
   background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
   color: white;
   padding: 10px;
   opacity: 0;
   transition: opacity 2s ease;
+  font-size: 18px;
 }
 
 .contenedor-imagen:hover .texto-superpuesto {
