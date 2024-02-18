@@ -1,7 +1,8 @@
+/* Estilos para el diseño de la página utilizando CSS Grid y estilos específicos para diferentes elementos */
 .grid {
-    display: grid;
-    grid-template-columns: 0.3fr repeat(5, 1fr) 0.3fr;
-    grid-template-rows: 1.2fr repeat(8, 1fr);
+    display: grid; /* Ponemos grid */
+    grid-template-columns: 0.3fr repeat(5, 1fr) 0.3fr; /* Columnas */
+    grid-template-rows: 1.2fr repeat(8, 1fr); /*Filas */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     color: white;

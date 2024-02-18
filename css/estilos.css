@@ -1,13 +1,18 @@
+/* Transiciones suaves para todos los elementos */
 * {
   transition: all 0.3s ease-in-out;
 }
 
+/* Importa la fuente de Google Fonts para usar en el proyecto */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-a:any-link{
+
+/* Estilo básico para los enlaces */
+a:any-link {
   text-decoration: none;
   color: #ffffff;
 }
-a:active{
+
+a:active {
   text-decoration: none;
 }
 
@@ -19,10 +24,12 @@ a:active{
   background: rgba(0, 0, 0, 0.9);
 }
 
+/* Oculta la capa de cookies el usuario lo ha aceptado */
 #cookies:target {
   display: none;
 }
 
+/* Estilos para el contenedor de la capa de cookies */
 .cookie-div {
   position: absolute;
   top: 40%;
@@ -35,7 +42,6 @@ a:active{
   max-width: 500px;
   text-align: center;
   color: #ffffff;
-
 }
 
 .cookies button {
@@ -61,20 +67,22 @@ button.necesario:hover {
   background-color: #f1e5c5;
 }
 
+/* Estilos para la línea horizontal */
 hr {
   color: rgb(255, 136, 0);
   margin: 20px 0;
 }
 
+/* Estilos generales para el cuerpo del documento */
 body {
   margin: 0;
   padding: 0;
   background-color: rgb(0, 0, 0);
   font-family: 'Poppins', Verdana, sans-serif;
   font-size: 2.1vh;
-
 }
 
+/* Estilos para el menu */
 .container {
   overflow: auto;
   background-color: rgb(0, 0, 0, 0.7);
@@ -85,11 +93,13 @@ body {
   z-index: 3;
 }
 
+/* Estilos para la navegación */
 nav {
   float: right;
   margin-right: 5vw;
 }
 
+/* Estilos para el logotipo */
 .logo {
   float: left;
   margin-left: 5vw;
@@ -98,14 +108,16 @@ nav {
   width: 210px;
 }
 
+/* Para cuando redimensiones la pantalla */
 @media (max-width: 850px) {
+  /* Ajustes para el logotipo */
   .logo {
     float: none;
     margin: 0 auto;
     display: block;
-
   }
 
+  /* Ajustes para la navegación */
   nav {
     float: none;
     margin: 0px 10vw;
@@ -113,12 +125,8 @@ nav {
     justify-content: center;
     align-items: center;
     z-index: 0;
-
   }
-
-  ;
 }
-
 
 ul li {
   display: inline-block;
@@ -139,19 +147,22 @@ ul li {
   display: none;
 }
 
+/* Para cuando redimensiones la pantalla */
 @media (max-width: 900px) {
+  /* Oculta los videos en pantallas pequeñas */
   .video video {
     display: none;
   }
 
+  /* Muestra los videos hecho para resoluciones pequeñas */
   .video video.mobile {
     display: block;
   }
 }
 
+/* Estilos para los elementos de la lista de navegación al pasar el cursor sobre ellos */
 ul li:hover {
   background-color: rgb(220, 143, 0);
   border-radius: 15px;
   cursor: pointer;
-
 }
