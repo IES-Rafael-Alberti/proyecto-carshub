@@ -1,0 +1,46 @@
+.grid {
+    display: grid;
+    grid-template-columns: 0.3fr repeat(5, 1fr) 0.3fr;
+    grid-template-rows: 1.2fr repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: white;
+}
+h1, h2{
+    color: #d79c06;
+}
+.pregunta {
+    font-size: 6vh;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    background: #000405;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+}
+
+.subrayar {
+    border-bottom: 10px solid #ffb940;
+    position: relative;
+
+}
+
+.grid1 {
+    grid-area: 1 / 2 / 2 / 7;
+}
+
+.grid2 {
+    grid-area: 2 / 2 / 5 / 4;
+}
+
+.grid3 {
+    grid-area: 2 / 4 / 5 / 7;
+}
+
+.grid4 {
+    grid-area: 5 / 1 / 10 / 8;
+}
